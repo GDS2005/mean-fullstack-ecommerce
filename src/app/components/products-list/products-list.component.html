@@ -1,0 +1,11 @@
+@if(productsResults$ | async; as resultObject){
+    <ul>
+        @for(item of resultObject.results; track item.name){
+            <li>
+                <app-products-item [productInfo]="item"></app-products-item>
+            </li>
+        }
+    </ul>
+}@else {
+    <p> ¡Cannot find anything! </p>
+}

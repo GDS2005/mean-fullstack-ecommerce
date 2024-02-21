@@ -1,11 +1,9 @@
 export interface Product {
     name: string;
-    url: string;
+    description: string;
+    price: number;
 }
 
 export interface ProductResults {
-    count: number;
-    next: string;
-    previous?: string;
-    result: Product[]
+    results: Product[]
 }
