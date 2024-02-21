@@ -1,10 +1,22 @@
 # MeanEcommerce
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
+Ecommerce made with the MEAN stack. Angular 17.2.0 works as Client side framework (Frontend) and MongoDB, Express and Node.js as a Server side API REST (Backend).
+
+## Prerequisites
+
+1. Node.js Installed
+2. MongoDB Connection
+3. In Windows; `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned` to execute commands in console.
+
+## First Steps
+
+1. Clone the respository `git clone https://github.com/GDS2005/mean-fullstack-ecommerce.git`.
+2. Install Node Modules: `npm install`.
+3. Install Angular CLI: `npm install -g @angular/cli`.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files. Also, run `node .\server\server.js` for the API REST.
 
 ## Code scaffolding
 

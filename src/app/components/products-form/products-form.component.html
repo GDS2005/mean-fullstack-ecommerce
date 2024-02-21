@@ -1,0 +1,15 @@
+<form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Name</label>
+      <input type="text" class="form-control" name="name" id="name" required>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Description</label>
+      <input type="text" class="form-control" name="description" id="description" required>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Price</label>
+        <input type="number" class="form-control" name="price" id="price" required>
+      </div>
+    <button (click)="addProduct()" class="btn btn-primary">Ingresar</button>
+</form>

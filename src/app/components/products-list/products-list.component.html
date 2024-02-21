@@ -1,11 +1,13 @@
-@if(productsResults$ | async; as resultObject){
-    <ul>
-        @for(item of resultObject.results; track item.name){
-            <li>
-                <app-products-item [productInfo]="item"></app-products-item>
-            </li>
-        }
-    </ul>
-}@else {
-    <p> ¡Cannot find anything! </p>
-}
+<div class="container-fluid ">
+    @if(productsResults$ | async; as resultObject){
+        <div class="row justify-content-evenly mt-5"> 
+            @for(item of resultObject.results; track item.name){
+                <div class="col col-md-3 mb-5">
+                    <app-products-item [productInfo]="item"></app-products-item>
+                </div>
+            }
+        </div>
+    }@else {
+        <p> ¡Cannot find anything! </p>
+    }
+</div>

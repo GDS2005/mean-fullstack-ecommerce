@@ -20,4 +20,11 @@ export class ProductsListComponent {
   ngOnInit(): void{
     this.productsResults$ = this.service.getProductList();
   }
+
+  update(name: string){
+    console.log(name)
+  }
+  delete(name: string){
+    console.log(name)
+  } 
 }

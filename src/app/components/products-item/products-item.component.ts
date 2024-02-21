@@ -10,4 +10,12 @@ import { Product } from '../../interfaces/product';
 })
 export class ProductsItemComponent {
   @Input() productInfo!: Product;
+
+  update(index: number){
+    console.log(index)
+  }
+  delete(index: number){
+    console.log(index)
+  } 
 }
+
